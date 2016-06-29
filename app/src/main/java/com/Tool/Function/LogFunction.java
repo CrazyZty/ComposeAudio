@@ -17,7 +17,7 @@ import java.io.StringWriter;
  * Created by zhengtongyu on 16/5/23.
  */
 public class LogFunction {
-    private static final String tag = "ComposeAudio";
+    private static final String tag = "AppLog";
 
     private static BufferedWriter errorOutputStream;
 
@@ -110,7 +110,7 @@ public class LogFunction {
                     .write(CommonFunction.GetDate() + "   " + title + ":" + content + "\r\n");
             errorOutputStream.flush();
         } catch (Exception e) {
-            Log.e(tag + " :打印error数据异常", e.toString());
+            Log.e(tag + ":打印error数据异常", e.toString());
         }
     }
 
